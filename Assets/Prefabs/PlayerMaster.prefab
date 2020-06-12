@@ -41,6 +41,8 @@ GameObject:
   m_Component:
   - component: {fileID: 166838678630858787}
   - component: {fileID: 166838678630858786}
+  - component: {fileID: 414513872}
+  - component: {fileID: 414513870}
   m_Layer: 0
   m_Name: PlayerLogic
   m_TagString: Untagged
@@ -75,6 +77,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee8f7050d6f5d4549890bd3f2ddc9ca3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementSettings:
+    moveSpeed: 10
+    rollTime: 0.7
+    rollDistance: 2
+  onPlayerRoll:
+    m_PersistentCalls:
+      m_Calls: []
+  onPlayerEndRoll:
+    m_PersistentCalls:
+      m_Calls: []
+  playerAnimator: {fileID: 0}
+--- !u!50 &414513872
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166838678630858784}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
+--- !u!95 &414513870
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166838678630858784}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3b746b8fe8010b841b6ac34a0d3c64f0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &166838678667417949
 GameObject:
   m_ObjectHideFlags: 0
