@@ -11,7 +11,6 @@ public class PlayerRolling : baseMovementState
     {
         base.Awake();
         rb = GetComponent<Rigidbody2D>();
-        owner.playerAnimator.SetTrigger("PlayerRollTrigger");
         owner.onPlayerRoll.Invoke();
     }
 
@@ -20,13 +19,21 @@ public class PlayerRolling : baseMovementState
         base.Enter();
         rb.velocity = rb.velocity.normalized;
         rb.velocity *= owner.movementSettings.rollDistance / owner.movementSettings.rollTime;
+        owner.playerAnimator.SetTrigger("PlayerRollTrigger");
         StartCoroutine(endRoll());
     }
 
     private IEnumerator endRoll()
     {
         yield return new WaitForSeconds(owner.movementSettings.rollTime);
-        owner.CurrentState = owner.GetState<PlayerMovementState>();
         owner.playerAnimator.SetTrigger("PlayerEndRoll");
+        owner.onPlayerEndRoll.Invoke();
+        owner.CurrentState = owner.GetState<PlayerMovementState>();
+        
+    }
+
+    public override void Exit()
+    {
+        base.Exit();
     }
 }

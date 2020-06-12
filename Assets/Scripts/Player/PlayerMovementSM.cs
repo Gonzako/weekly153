@@ -7,6 +7,7 @@ public class PlayerMovementSM : BaseStateMachine
 
     public MovementSettings movementSettings;
 
+    [Space(25)]
     public UnityEngine.Events.UnityEvent onPlayerRoll;
     public UnityEngine.Events.UnityEvent onPlayerEndRoll;
 

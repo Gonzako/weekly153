@@ -121,52 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &414513869 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 166838678630858784, guid: 8760b9955c0124b4b84a28caa10c2331,
-    type: 3}
-  m_PrefabInstance: {fileID: 166838678757473005}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &414513870
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 414513869}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3b746b8fe8010b841b6ac34a0d3c64f0, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!50 &414513872
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 414513869}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 0
 --- !u!1 &988484693
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,17 +274,7 @@ PrefabInstance:
     - target: {fileID: 166838678630858786, guid: 8760b9955c0124b4b84a28caa10c2331,
         type: 3}
       propertyPath: movementSettings.moveSpeed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 166838678630858786, guid: 8760b9955c0124b4b84a28caa10c2331,
-        type: 3}
-      propertyPath: movementSettings.rollTime
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 166838678630858786, guid: 8760b9955c0124b4b84a28caa10c2331,
-        type: 3}
-      propertyPath: movementSettings.rollDistance
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8760b9955c0124b4b84a28caa10c2331, type: 3}

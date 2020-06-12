@@ -27,9 +27,9 @@ public class PlayerMovementState : baseMovementState
 
         owner.playerAnimator.SetBool("IsPlayerWalking", inputVect.magnitude > 0.2f);
 
-        angleToMouse();
+        //angleToMouse();
 
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && inputVect.magnitude > 0)
         {
             owner.CurrentState = owner.GetState<PlayerRolling>();
             
