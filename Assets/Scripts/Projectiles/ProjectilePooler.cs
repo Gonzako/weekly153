@@ -24,9 +24,11 @@ public class ProjectilePooler : MonoBehaviour
 
     private void InstatiatePool()
     {
+        var parent = new GameObject();
+        parent.name = "projectilePool";
         for(int x = 0; x < _amount; x++)
         {
-            GameObject new_instance = Instantiate(_projectilePrefab);
+            GameObject new_instance = Instantiate(_projectilePrefab, parent.transform);
             new_instance.SetActive(false);
             _pool.Add(new_instance);
         }

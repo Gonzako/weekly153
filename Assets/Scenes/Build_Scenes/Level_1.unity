@@ -1725,6 +1725,12 @@ PrefabInstance:
       propertyPath: _shooters.Array.data[2]
       value: 
       objectReference: {fileID: 788843879}
+    - target: {fileID: 3957722767954099403, guid: efd58aa60764f00469a586bc7dd14237,
+        type: 3}
+      propertyPath: onTrapActivated
+      value: 
+      objectReference: {fileID: 11400000, guid: d0dc3ccc21763dd43a22345acd3cc27d,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: efd58aa60764f00469a586bc7dd14237, type: 3}
 --- !u!1 &1209314257
@@ -2546,7 +2552,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e10fcda794fc1fc41b460f901cbe7563, type: 3}
---- !u!43 &1373889228
+--- !u!43 &1508765770
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2962,8 +2968,8 @@ MonoBehaviour:
   - {x: 0.32, y: 0.64, z: 0}
   - {x: -0.32, y: 0.64, z: 0}
   m_ShapePathHash: 0
-  m_Mesh: {fileID: 1373889228}
-  m_InstanceId: -63064
+  m_Mesh: {fileID: 1508765770}
+  m_InstanceId: 33734
 --- !u!212 &1651034994
 SpriteRenderer:
   m_ObjectHideFlags: 0
