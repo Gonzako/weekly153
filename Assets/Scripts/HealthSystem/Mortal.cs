@@ -13,13 +13,18 @@ public class Mortal : MonoBehaviour, IMortal
     [SerializeField] private FloatVariable _Health = null;
     [SerializeField] private float _MaxHealth = 0.0F;
 
+    private void Start()
+    {
+        _Health.Value = _MaxHealth;
+    }
+
     public void Damage(float damage)
     {
-        _Health.Value -= Mathf.Clamp(_Health.Value - damage, 0, _MaxHealth);
+        _Health.Value = Mathf.Clamp(_Health.Value - damage, 0, _MaxHealth);
     }
 
     public void Heal(float healthpoints)
     {
-        _Health.Value += Mathf.Clamp(_Health.Value + healthpoints, 0, _MaxHealth);
+        _Health.Value = Mathf.Clamp(_Health.Value + healthpoints, 0, _MaxHealth);
     }
 }

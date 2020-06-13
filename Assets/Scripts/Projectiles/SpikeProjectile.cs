@@ -10,12 +10,17 @@ public class SpikeProjectile : MonoBehaviour
 
     private void OnEnable()
     {
-        _rb.GetComponent<Rigidbody2D>();
+        _rb = GetComponent<Rigidbody2D>();
     }
-
-    private void OnCollisionEnter(Collision collision)
+    private void Start()
     {
-        IMortal mortal = collision.transform.GetComponent<IMortal>();
+        _rb = GetComponent<Rigidbody2D>();
+    }
+    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+       IMortal mortal = collision.transform.GetComponentInChildren<Mortal>();
+
         if (mortal != null)
         {
             mortal.Damage(damage);
