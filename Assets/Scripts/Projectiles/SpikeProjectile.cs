@@ -6,7 +6,7 @@ public class SpikeProjectile : MonoBehaviour
 {
     [SerializeField] private float damage = 0F;
 
-    private Rigidbody2D _rb;
+    private Rigidbody2D _rb = null;
 
     private void OnEnable()
     {
