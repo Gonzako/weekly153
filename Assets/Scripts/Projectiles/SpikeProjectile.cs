@@ -24,7 +24,7 @@ public class SpikeProjectile : MonoBehaviour
         if (mortal != null)
         {
             mortal.Damage(damage);
-            Destroy(transform.gameObject);
+            transform.gameObject.SetActive(false);
         }
         //add more force reduced by 50% of the current
         _rb.AddForce(Vector2.Reflect(transform.right, collision.transform.position.normalized) * _rb.velocity / 2, ForceMode2D.Impulse);
