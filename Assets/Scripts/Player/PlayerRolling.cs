@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerRolling : baseMovementState
 {
     Rigidbody2D rb;
-
+    Vector2 rolVel;
     protected override void Awake()
     {
         base.Awake();
@@ -19,8 +19,14 @@ public class PlayerRolling : baseMovementState
         base.Enter();
         rb.velocity = rb.velocity.normalized;
         rb.velocity *= owner.movementSettings.rollDistance / owner.movementSettings.rollTime;
+        rolVel = rb.velocity;
         owner.playerAnimator.SetTrigger("PlayerRollTrigger");
         StartCoroutine(endRoll());
+    }
+
+    private void FixedUpdate()
+    {
+        rb.velocity = rolVel;
     }
 
     private IEnumerator endRoll()
