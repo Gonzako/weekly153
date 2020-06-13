@@ -2,10 +2,21 @@
 
 public class SpikeShooter : MonoBehaviour
 {
+    [SerializeField] Transform direction = null;
+    [SerializeField] float startVelocity = 10;
+
+
     public void Shoot()
     {
         GameObject pr = ProjectilePooler._instance.getPooledObject();
-        pr.transform.position = transform.position + Vector3.right;
-        pr.GetComponent<Rigidbody2D>().AddForce(Vector2.right * 50F, ForceMode2D.Impulse);
+
+        var dirVector = direction.position - transform.position;
+        dirVector = (Vector2)dirVector;
+        dirVector = dirVector.normalized;
+
+
+        pr.transform.position = direction.position;
+        pr.transform.rotation = transform.rotation;
+        pr.GetComponent<Rigidbody2D>().AddForce(dirVector * startVelocity, ForceMode2D.Impulse);
     }
 }
