@@ -11,7 +11,8 @@ public class spriteFlipper : MonoBehaviour
     private void FixedUpdate()
     {
 
-        target.flipX = information.velocity.x < 0;
+        if (Mathf.Abs( information.velocity.x) > 0)
+            target.flipX = information.velocity.x < 0;
 
     }
 
