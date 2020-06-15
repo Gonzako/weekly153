@@ -10,7 +10,7 @@ public class ProjectilePooler : MonoBehaviour
 
     public static ProjectilePooler _instance;
     private List<GameObject> _pool = new List<GameObject>();
-
+    private GameObject parent;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +24,7 @@ public class ProjectilePooler : MonoBehaviour
 
     private void InstatiatePool()
     {
-        var parent = new GameObject();
+        parent = new GameObject();
         parent.name = "projectilePool";
         for(int x = 0; x < _amount; x++)
         {
@@ -46,7 +46,11 @@ public class ProjectilePooler : MonoBehaviour
             }
         }
 
-        return null;
+        GameObject new_instance = Instantiate(_projectilePrefab, parent.transform);
+        new_instance.SetActive(true);
+        _pool.Add(new_instance);
+
+        return new_instance;
     }
 
    
