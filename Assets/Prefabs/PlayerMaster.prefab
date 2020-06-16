@@ -46,6 +46,8 @@ GameObject:
   - component: {fileID: 166838678757473009}
   - component: {fileID: 3913647780631755085}
   - component: {fileID: 1520180004274877117}
+  - component: {fileID: 8529866961449506136}
+  - component: {fileID: 1057056925713910083}
   m_Layer: 8
   m_Name: PlayerLogic
   m_TagString: Untagged
@@ -238,8 +240,43 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.25}
-  m_Size: {x: 0.5, y: 1}
+  m_Size: {x: 0.23, y: 0.52}
   m_Direction: 0
+--- !u!58 &8529866961449506136
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166838678630858784}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.04
+--- !u!114 &1057056925713910083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166838678630858784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6cdb29c3ba58ba4eb88d0753ecc0f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onDamage: {fileID: 11400000, guid: a56c06598e64dbe42ad7569aa6280b93, type: 2}
+  onHeal: {fileID: 0}
+  onMortalDeath:
+    m_PersistentCalls:
+      m_Calls: []
+  _Health: {fileID: 11400000, guid: 6880e0a52dfebda4fada4001cd2f7bae, type: 2}
+  _MaxHealth: 0
 --- !u!1 &166838678667417949
 GameObject:
   m_ObjectHideFlags: 0
