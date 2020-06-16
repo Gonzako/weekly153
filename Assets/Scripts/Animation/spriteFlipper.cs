@@ -11,9 +11,12 @@ public class spriteFlipper : MonoBehaviour
     private void FixedUpdate()
     {
 
-        if (Mathf.Abs( information.velocity.x) > 0)
-            target.flipX = information.velocity.x < 0;
-
+        if (Mathf.Abs(information.velocity.x) > 0)
+        {
+            var newLocal = transform.localScale;
+            newLocal.x = information.velocity.x > 0 ? Mathf.Abs(newLocal.x) : -Mathf.Abs(newLocal.x);
+            transform.localScale = newLocal;
+        }
     }
 
 

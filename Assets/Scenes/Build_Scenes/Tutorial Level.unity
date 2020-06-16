@@ -2338,18 +2338,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerMaster HealthVariant
       objectReference: {fileID: 0}
-    - target: {fileID: 6886967386201583649, guid: e10fcda794fc1fc41b460f901cbe7563,
-        type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1402534089
-      objectReference: {fileID: 0}
-    - target: {fileID: 6886967386201583649, guid: e10fcda794fc1fc41b460f901cbe7563,
-        type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8529866961449506136, guid: e10fcda794fc1fc41b460f901cbe7563, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e10fcda794fc1fc41b460f901cbe7563, type: 3}
 --- !u!1 &1492303573 stripped
 GameObject:
