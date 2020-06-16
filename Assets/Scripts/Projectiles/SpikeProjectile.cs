@@ -17,7 +17,7 @@ public class SpikeProjectile : MonoBehaviour
         _rb = GetComponent<Rigidbody2D>();
     }
     
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
        IMortal mortal = collision.transform.GetComponentInChildren<Mortal>();
 
