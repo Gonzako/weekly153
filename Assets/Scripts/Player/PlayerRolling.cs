@@ -26,7 +26,7 @@ public class PlayerRolling : baseMovementState
 
     private void FixedUpdate()
     {
-        rb.velocity = rolVel;
+        //rb.velocity = rolVel;
     }
 
     private IEnumerator endRoll()
