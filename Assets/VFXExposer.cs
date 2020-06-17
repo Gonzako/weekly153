@@ -16,4 +16,9 @@ public class VFXExposer : MonoBehaviour
         walkingPS.gameObject.SetActive(enabled);
     }
 
+
+    public void walkEmit(int count)
+    {
+        walkingPS.Emit(count);
+    }
 }
