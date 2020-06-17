@@ -19,12 +19,11 @@ public class SpikeProjectile : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
-       IMortal mortal = collision.transform.GetComponentInChildren<Mortal>();
+       Mortal mortal = collision.transform.GetComponentInChildren<Mortal>();
 
-        if (mortal != null)
+        if (mortal.enabled)
         {
             mortal.Damage(damage);
-            transform.gameObject.SetActive(false);
         }
 
         gameObject.SetActive(false);

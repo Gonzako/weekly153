@@ -36,9 +36,9 @@ public class spikeLogic : MonoBehaviour
 
             if (collision.CompareTag("Player"))
             {
-                var dmg = collision.GetComponent<IMortal>();
-
-                dmg.Damage(100);
+                var dmg = collision.GetComponent<Mortal>();
+                if(dmg.enabled)
+                    dmg.Damage(100);
             }
         }
     }

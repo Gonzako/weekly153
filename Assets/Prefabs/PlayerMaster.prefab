@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 166838677008003485}
   m_Layer: 8
   m_Name: PlayerMaster
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51,7 +51,7 @@ GameObject:
   - component: {fileID: 8529866961449506136}
   m_Layer: 8
   m_Name: PlayerLogic
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125,6 +125,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1057056925713910083}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onPlayerEndRoll:
     m_PersistentCalls:
       m_Calls:
@@ -151,6 +162,17 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 4018416779810989721}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1057056925713910083}
         m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
@@ -276,7 +298,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   _Health: {fileID: 11400000, guid: 6880e0a52dfebda4fada4001cd2f7bae, type: 2}
-  _MaxHealth: 1
+  _MaxHealth: 3
 --- !u!58 &8529866961449506136
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5196,9 +5218,9 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1402534089
+  m_SortingLayer: 1
+  m_SortingOrder: 5
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
