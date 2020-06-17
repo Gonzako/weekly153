@@ -27,6 +27,19 @@ public class spikeLogic : MonoBehaviour
         {
             spikeTrigger.SetTrigger(animTrigger);
             triggered = true;
+            Debug.LogFormat("{0} collided with {1} triggered start animation", this.gameObject.name, collision.gameObject.name);
+        }
+        else
+        {
+
+            Debug.LogFormat("{0} damaged {1}", gameObject.name, collision.gameObject.name);
+
+            if (collision.CompareTag("Player"))
+            {
+                var dmg = collision.GetComponent<IMortal>();
+
+                dmg.Damage(100);
+            }
         }
     }
 }
