@@ -11,7 +11,7 @@ public class VFXExposer : MonoBehaviour
     [SerializeField] ParticleSystem walkingPS = null;
 
 
-    public void changeWalkingFX(bool enabled)
+    public void ChangeWalkingFX(bool enabled)
     {
         walkingPS.gameObject.SetActive(enabled);
     }

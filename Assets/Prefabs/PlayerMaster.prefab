@@ -86,7 +86,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSettings:
-    moveSpeed: 1
+    moveSpeed: 2
     rollTime: 0.7
     rollDistance: 3
   onPlayerRoll:
@@ -436,7 +436,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.25}
-  m_Size: {x: 0.5, y: 1}
+  m_Size: {x: 0.5, y: 0.94}
   m_Direction: 0
 --- !u!1 &6062938754292683244
 GameObject:
@@ -688,9 +688,9 @@ ParticleSystem:
         m_RotationOrder: 4
     startColor:
       serializedVersion: 2
-      minMaxState: 0
-      minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      minMaxState: 2
+      minColor: {r: 0.40028167, g: 0.49014083, b: 0.58, a: 1}
+      maxColor: {r: 0.19215688, g: 0.23529413, b: 0.2784314, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -5177,7 +5177,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 31fb1039be526b1458d0533f38b7380f, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
