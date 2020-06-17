@@ -1,7 +1,103 @@
 fileFormatVersion: 2
 guid: 6292dada77a3152479756a75d30f2e66
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 6860512660127613002
+    second: spike_stab_0
+  - first:
+      213: 5470567502186377032
+    second: spike_stab_1
+  - first:
+      213: 1360025836006740775
+    second: spike_stab_2
+  - first:
+      213: -6025941189784869509
+    second: spike_stab_3
+  - first:
+      213: -1449286234653809016
+    second: spike_stab_4
+  - first:
+      213: 3953635507377788304
+    second: spike_stab_5
+  - first:
+      213: -4256923433512087560
+    second: spike_stab_6
+  - first:
+      213: 7371404047263369568
+    second: spike_stab_7
+  - first:
+      213: 1534511271842379145
+    second: spike_stab_8
+  - first:
+      213: -5144032922161582849
+    second: spike_stab_9
+  - first:
+      213: 1066454504724888215
+    second: spike_stab_10
+  - first:
+      213: -2600398224389270532
+    second: spike_stab_11
+  - first:
+      213: 6994208773504519766
+    second: spike_stab_12
+  - first:
+      213: 5744115368853655685
+    second: spike_stab_13
+  - first:
+      213: -6201996406198279888
+    second: spike_stab_14
+  - first:
+      213: -1074598057883420771
+    second: spike_stab_15
+  - first:
+      213: -3133535931669168743
+    second: spike_stab_16
+  - first:
+      213: 773299548139337752
+    second: spike_stab_17
+  - first:
+      213: 2764076618620119916
+    second: spike_stab_18
+  - first:
+      213: 5217210354332367755
+    second: spike_stab_19
+  - first:
+      213: -5486073255564225822
+    second: spike_stab_20
+  - first:
+      213: -2860855690971219657
+    second: spike_stab_21
+  - first:
+      213: -5316954960656368492
+    second: spike_stab_22
+  - first:
+      213: -8154281986976589692
+    second: spike_stab_23
+  - first:
+      213: 2825627781185021475
+    second: spike_stab_24
+  - first:
+      213: 5877857140676123543
+    second: spike_stab_25
+  - first:
+      213: 7424640440965333534
+    second: spike_stab_26
+  - first:
+      213: -4413389917125638543
+    second: spike_stab_27
+  - first:
+      213: 2827990748734879416
+    second: spike_stab_28
+  - first:
+      213: -3243152264252705948
+    second: spike_stab_29
+  - first:
+      213: 6873053030759275768
+    second: spike_stab_30
+  - first:
+      213: -5898693889902329815
+    second: spike_stab_31
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -31,7 +127,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,12 +136,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -71,9 +167,201 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: spike_stab_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a400af37aef653f50800000000000000
+      internalID: 6860512660127613002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spike_stab_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84f6d9fa82c5beb40800000000000000
+      internalID: 5470567502186377032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spike_stab_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7231988ca48cfd210800000000000000
+      internalID: 1360025836006740775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spike_stab_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b756a792a6e8f5ca0800000000000000
+      internalID: -6025941189784869509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spike_stab_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 886a89529d913ebe0800000000000000
+      internalID: -1449286234653809016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spike_stab_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095df94fb822ed630800000000000000
+      internalID: 3953635507377788304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spike_stab_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ffc97df0be5ce4c0800000000000000
+      internalID: -4256923433512087560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spike_stab_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0698205fcec7c4660800000000000000
+      internalID: 7371404047263369568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
