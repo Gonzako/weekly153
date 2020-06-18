@@ -1174,6 +1174,81 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &603800108
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2945675675727334800, guid: 1abb1a540c522e94e9d8eca9facc67cd,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2945675675727334800, guid: 1abb1a540c522e94e9d8eca9facc67cd,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2945675675727334800, guid: 1abb1a540c522e94e9d8eca9facc67cd,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2945675675727334800, guid: 1abb1a540c522e94e9d8eca9facc67cd,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2945675675727334800, guid: 1abb1a540c522e94e9d8eca9facc67cd,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2945675675727334800, guid: 1abb1a540c522e94e9d8eca9facc67cd,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2945675675727334800, guid: 1abb1a540c522e94e9d8eca9facc67cd,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2945675675727334800, guid: 1abb1a540c522e94e9d8eca9facc67cd,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2945675675727334800, guid: 1abb1a540c522e94e9d8eca9facc67cd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2945675675727334800, guid: 1abb1a540c522e94e9d8eca9facc67cd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2945675675727334800, guid: 1abb1a540c522e94e9d8eca9facc67cd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2945675675727334806, guid: 1abb1a540c522e94e9d8eca9facc67cd,
+        type: 3}
+      propertyPath: m_Name
+      value: music_source
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1abb1a540c522e94e9d8eca9facc67cd, type: 3}
+--- !u!70 &643850870 stripped
+CapsuleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 5249812972574743491, guid: e10fcda794fc1fc41b460f901cbe7563,
+    type: 3}
+  m_PrefabInstance: {fileID: 1492303572}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &743189023
 GameObject:
   m_ObjectHideFlags: 0
@@ -2056,6 +2131,71 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerMaster HealthVariant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6886967385835448668, guid: e10fcda794fc1fc41b460f901cbe7563,
+        type: 3}
+      propertyPath: onPlayerRoll.m_PersistentCalls.m_Calls.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6886967385835448668, guid: e10fcda794fc1fc41b460f901cbe7563,
+        type: 3}
+      propertyPath: onPlayerEndRoll.m_PersistentCalls.m_Calls.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6886967385835448668, guid: e10fcda794fc1fc41b460f901cbe7563,
+        type: 3}
+      propertyPath: onPlayerRoll.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6886967385835448668, guid: e10fcda794fc1fc41b460f901cbe7563,
+        type: 3}
+      propertyPath: onPlayerRoll.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6886967385835448668, guid: e10fcda794fc1fc41b460f901cbe7563,
+        type: 3}
+      propertyPath: onPlayerRoll.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 643850870}
+    - target: {fileID: 6886967385835448668, guid: e10fcda794fc1fc41b460f901cbe7563,
+        type: 3}
+      propertyPath: onPlayerRoll.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 6886967385835448668, guid: e10fcda794fc1fc41b460f901cbe7563,
+        type: 3}
+      propertyPath: onPlayerRoll.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6886967385835448668, guid: e10fcda794fc1fc41b460f901cbe7563,
+        type: 3}
+      propertyPath: onPlayerEndRoll.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6886967385835448668, guid: e10fcda794fc1fc41b460f901cbe7563,
+        type: 3}
+      propertyPath: onPlayerEndRoll.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6886967385835448668, guid: e10fcda794fc1fc41b460f901cbe7563,
+        type: 3}
+      propertyPath: onPlayerEndRoll.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6886967385835448668, guid: e10fcda794fc1fc41b460f901cbe7563,
+        type: 3}
+      propertyPath: onPlayerEndRoll.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 643850870}
+    - target: {fileID: 6886967385835448668, guid: e10fcda794fc1fc41b460f901cbe7563,
+        type: 3}
+      propertyPath: onPlayerEndRoll.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 6886967385835448668, guid: e10fcda794fc1fc41b460f901cbe7563,
+        type: 3}
+      propertyPath: onPlayerEndRoll.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e10fcda794fc1fc41b460f901cbe7563, type: 3}

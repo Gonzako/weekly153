@@ -9,7 +9,7 @@ public class MusicPlayer : MonoBehaviour
     public AudioSource music;
 
     // Update is called once per frame
-    void Update()
+    void Start()
     {
         if (in_game && !music.isPlaying)
         {
@@ -19,5 +19,6 @@ public class MusicPlayer : MonoBehaviour
         {
             music.Stop();
         }
+        DontDestroyOnLoad(this.gameObject);
     }
 }

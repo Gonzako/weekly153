@@ -21,7 +21,7 @@ public class SpikeProjectile : MonoBehaviour
     {
         Mortal mortal = collision.transform.GetComponentInChildren<Mortal>();
 
-        if (mortal != null && mortal.enabled)
+        if (mortal != null && !playerStatus.isRolling)
         {
             mortal.Damage(damage);
         }
