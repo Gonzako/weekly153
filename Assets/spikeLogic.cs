@@ -5,6 +5,10 @@ using UnityEngine;
 public class spikeLogic : MonoBehaviour
 {
 
+    public AudioSource spikeStart   = null;
+    public AudioSource spikeHurtbox = null;
+
+
     Animator spikeTrigger;
 
     private const string animTrigger = "StartSpikeUp";
@@ -28,6 +32,7 @@ public class spikeLogic : MonoBehaviour
             spikeTrigger.SetTrigger(animTrigger);
             triggered = true;
             Debug.LogFormat("{0} collided with {1} triggered start animation", this.gameObject.name, collision.gameObject.name);
+            spikeStart.Play();
         }
         else
         {
@@ -41,5 +46,11 @@ public class spikeLogic : MonoBehaviour
                     dmg.Damage(100);
             }
         }
+    }
+
+
+    public void playOnSound()
+    {
+        spikeHurtbox.Play();
     }
 }

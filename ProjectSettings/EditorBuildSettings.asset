@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Build_Scenes/SpikeIntroduction.unity
     guid: 2849e1dd4db6a6e45b8bcd93fd4fa19a
   - enabled: 1
-    path: Assets/Scenes/Build_Scenes/Level_1.unity
-    guid: 1e77bc5f6e5d2f4489f404fa724c1b02
+    path: Assets/Scenes/Build_Scenes/BulletIntroduction.unity
+    guid: b05c7d68e2f63bd469d106092b20c8d9
   m_configObjects: {}

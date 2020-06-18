@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class healthUIUpdate : MonoBehaviour
 {
@@ -23,6 +24,10 @@ public class healthUIUpdate : MonoBehaviour
             }
             var last = transform.GetChild(transform.childCount - 1);
             last.gameObject.SetActive(false);
+            return;
         }
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex, LoadSceneMode.Single);
+
     }
 }
